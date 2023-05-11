@@ -1,3 +1,16 @@
+# Rohirrim-Trading
+A personal project using ReactJS, ApexCharts, Alpha Vantage Stock API and Material UI to create a stock trading page.
+
+V0.5:
+-Alpha Vantage API integration for real time intraday trading data
+-React ApexCharts to dynamically create and display graphs in a carousel
+-Landing page, theme, styling set up with Material UI
+
+Future Steps: 
+-Clean up UI with backgrounds, animations
+-Create a news bulletin section, functionality for a login/logout page with React Router
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +81,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Rohirrim-Trading
