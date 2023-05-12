@@ -39,6 +39,7 @@ const StockChartOne = ({symbol}) => {
             `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${symbol}&apikey=YOUR_API_KEY`
           )
           .then((response) => {
+            console.log('called api')
             const data = response.data["Time Series (Daily)"];
             const stockData = [];
             for (let date in data) {

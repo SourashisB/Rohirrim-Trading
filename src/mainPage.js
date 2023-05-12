@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-
 import { Typography, Button, AppBar, Drawer, IconButton } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material";
 import MainHeading from "./UI/mainHeading";
-import Carousel from "./components/GraphCarousel";
-
+import GraphCarousel2 from "./components/GraphCarousel2";
 
 function MainPage() {
     const mainTheme = createTheme({
@@ -28,14 +26,19 @@ function MainPage() {
 
     });
 
-    
-    return (
-        <ThemeProvider theme={mainTheme}>
-            <AppBar position="static">
-                <MainHeading buttonColor='textPrimary' />
-            </AppBar>
 
-        </ThemeProvider>
+    return (
+        <div className="background">
+            <div className="grid"></div>
+            <div className="circles"></div>
+            <div className="lines"></div>
+            <ThemeProvider theme={mainTheme}>
+                <AppBar position="static">
+                    <MainHeading buttonColor='textPrimary' />
+                </AppBar>
+                <GraphCarousel2/>   
+            </ThemeProvider>
+        </div>
     )
 }
 
