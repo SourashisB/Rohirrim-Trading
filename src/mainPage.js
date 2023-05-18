@@ -3,6 +3,7 @@ import { Typography, Button, AppBar, Drawer, IconButton } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material";
 import MainHeading from "./UI/mainHeading";
 import GraphCarousel2 from "./components/GraphCarousel2";
+import TopNews from "./util/TopNews";
 
 function MainPage() {
     const mainTheme = createTheme({
@@ -36,7 +37,8 @@ function MainPage() {
                 <AppBar position="static">
                     <MainHeading buttonColor='textPrimary' />
                 </AppBar>
-                <GraphCarousel2/>   
+                <GraphCarousel2/>
+                <TopNews/>
             </ThemeProvider>
         </div>
     )
