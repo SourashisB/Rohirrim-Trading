@@ -3,7 +3,7 @@ import { Drawer, IconButton } from "@mui/material";
 import { Box, List, ListItem, Toolbar, Divider, AppBar } from "@mui/material";
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import { Menu } from "@mui/material";
+
 
 const drawerWidth = 120;
 export default function Sidebar() {
@@ -22,7 +22,7 @@ export default function Sidebar() {
                 <Toolbar />
                 <Box sx={{ overflow: 'auto' }}>
                     <List>
-                        {['Profile', 'News', 'Statistics', 'Orders'].map((text, index) => (
+                        {['Log In', 'News', 'Statistics', 'Orders'].map((text, index) => (
                             <ListItem key={text} disablePadding>
                                 <ListItemButton>
                                     <ListItemText primary={text} />

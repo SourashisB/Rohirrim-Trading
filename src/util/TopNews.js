@@ -28,9 +28,9 @@ function TopNews() {
         <div>
             <h2 className='heading'>Top News Headlines</h2>
             <div className='container'>
-                <ul classname='rounded' style={{ listStyle: 'none', padding: 0, display: 'flex', justifyContent: 'space-between' }}>
+                <ul classname='rounded' style={{ listStyle: 'none', padding: 0, display: 'flex', justifyContent: 'space-evenly' }}>
                     {news.map(article => (
-                        <li key={article.title} style={{ alignItems: 'center', fontFamily: 'Arial', fontSize: '18px', margin: '10px 0' }}>
+                        <li key={article.title} style={{ alignItems: 'center', fontFamily: 'Arial', fontSize: '18px', margin: '5px 10px' }}>
                             <div className='img-container ${hovered ? "hovered" : ""}' onMouseEnter={handleHover}
                                 onMouseLeave={handleLeave}>
                                 <img className="professional-img" src={article.urlToImage} alt={article.title} />

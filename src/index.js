@@ -2,11 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import mainPage from './mainPage';
+import {
+    
+    RouterProvider,
+  } from "react-router-dom";
 import MainPage from './mainPage';
+import { router } from './util/routes';
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <MainPage />
+    <RouterProvider router={router}/>
 );
 
 // If you want to start measuring performance in your app, pass a function
