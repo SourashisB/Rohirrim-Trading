@@ -1,6 +1,11 @@
 # Rohirrim-Trading
 A personal project using ReactJS, ApexCharts, Alpha Vantage Stock API and Material UI to create a stock trading page.
 
+V0.8:
+
+-React Router added and pages assigned to routes
+
+
 V0.7:
 
 -Top 3 daily News headline added with styling with NewsAPI
